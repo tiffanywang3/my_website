@@ -1,0 +1,7 @@
+From Terminal:
+
+Change directory nto this folder 
+	cd /Users/tyw/Desktop/my_website
+Run Webserver
+	python -m SimpleHTTPServer 8000
+In browser visit localhost:8000
