@@ -11,3 +11,25 @@ div.tictactoe {
 ul.nav {
 	margin: 50px 0;
 }
+
+.square {
+	width: 195px;
+	height: 195px;
+	display: inline-block;
+}
+
+.blank {
+	background-image: url('images/blank.png');
+}
+
+.x {
+	background-image: url('images/x.png');
+}
+
+.o {
+	background-image: url('images/o.png');
+}
+
+.tictactoe h1 {
+	margin: 0;
+}
