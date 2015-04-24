@@ -1,4 +1,4 @@
-div.tictactoe {
+.grandma {
 	margin: 0 auto;
     padding: 30px;
     min-height:500px;
@@ -10,4 +10,53 @@ div.tictactoe {
 }
 ul.nav {
 	margin: 50px 0;
+}
+
+#picture1 {
+	width:400px;
+	height:225px;
+}
+#picture2 {
+	width:400px;
+	height:225px;
+}
+#picture3 {
+	width:400px;
+	height:225px;
+}
+#picture4 {
+	width:400px;
+	height:225px;
+}
+#picture5 {
+	width:400px;
+	height:225px;
+}
+#picture6 {
+	width: 300px;
+	height: 400px;
+}
+#picture7 {
+	width: 300px;
+	height: 400px;
+}
+#picture8 {
+	width: 300px;
+	height: 400px;
+}
+#picture9 {
+	width: 300px;
+	height: 400px;
+}
+#picture10 {
+	width: 300px;
+	height: 400px;
+}
+
+div.horizontal_pictures {
+
+}
+
+div.vertical_pictures {
+
 }
