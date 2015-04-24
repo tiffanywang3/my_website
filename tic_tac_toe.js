@@ -16,10 +16,17 @@ var newGame = function(){
 	});
 };
 
-var checkEndGame = function(board, move){
-	if() {
 
-		var endGame = checkEndGame();
+var checkEndGame = function(board, move){
+	if( ) {
+		console.log("Player wins!");
+	} else if (){
+		console.log("Computer wins!");
+	} else{
+
+	}
+
+
 
 };
 
