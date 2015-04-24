@@ -11,52 +11,25 @@
 ul.nav {
 	margin: 50px 0;
 }
-
-#picture1 {
+.horizontal_pictures {
 	width:400px;
 	height:225px;
+	display:inline-block;	
 }
-#picture2 {
-	width:400px;
-	height:225px;
+.horizontal1 {
+	width: 400px;
+	height: 536px;
 }
-#picture3 {
-	width:400px;
-	height:225px;
-}
-#picture4 {
-	width:400px;
-	height:225px;
-}
-#picture5 {
-	width:400px;
-	height:225px;
-}
-#picture6 {
-	width: 300px;
-	height: 400px;
-}
-#picture7 {
-	width: 300px;
-	height: 400px;
-}
-#picture8 {
-	width: 300px;
-	height: 400px;
-}
-#picture9 {
-	width: 300px;
-	height: 400px;
-}
-#picture10 {
-	width: 300px;
-	height: 400px;
+.vertical_pictures {
+	width:300px;
+	height:400px;
+	display:inline;	
 }
 
-div.horizontal_pictures {
-
+a.piclink {
+	text-decoration: none;
 }
 
-div.vertical_pictures {
 
-}
+/*
+}*/
