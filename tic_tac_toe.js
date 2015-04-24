@@ -16,6 +16,13 @@ var newGame = function(){
 	});
 };
 
+var checkEndGame = function(board, move){
+	if() {
+
+		var endGame = checkEndGame();
+
+};
+
 
 $(document).ready(function(){
 	newGame();
