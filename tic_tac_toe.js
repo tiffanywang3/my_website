@@ -10,7 +10,7 @@ var generateComputerMove = function(){
 
 var newGame = function(){
 	$(".blank").click(function(){
-		var gameStatus = checkEndGame();
+		gameStatus = checkEndGame();
 		if(gameStatus) {
 			alert(gameStatus);
 			return;

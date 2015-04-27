@@ -1,4 +1,4 @@
-div.tictactoe {
+div.blackjack {
 	margin: 0 auto;
 	padding-bottom:20px;
     min-height:500px;
@@ -30,6 +30,6 @@ ul.nav {
 	background-image: url('images/o.png');
 }
 
-.tictactoe h1 {
+.blackjack h1 {
 	margin: 42.880;
 }
