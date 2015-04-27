@@ -10,22 +10,26 @@ var generateComputerMove = function(){
 
 var newGame = function(){
 	$(".blank").click(function(){
+		var gameStatus = checkEndGame();
+		if(gameStatus) {
+			alert(gameStatus);
+			return;
+		}
 		drawMove(this, "x");
+		gameStatus = checkEndGame();
+		if(gameStatus) {
+			alert(gameStatus);
+			return;
+		}
 		var computerMove = generateComputerMove();
 		drawMove(computerMove, "o");
+		gameStatus = checkEndGame();
+		if(gameStatus) {
+			alert(gameStatus);
+			return;
+		}
 	});
 };
-
-/*
-var checkEndGame = function(board, move){
-	if() {
-		console.log("Player wins!");
-	} else if (){
-		console.log("Computer wins!");
-	} else{
-
-	};
-};*/
 
 var checkRow = function(squares){
 	if($(squares[0]).hasClass("x") && 
@@ -58,7 +62,7 @@ var checkRow = function(squares){
 	   $(squares[8]).hasClass("o")) {
 		return "o"
 	} 
-	return null
+	return null;
 };
 
 var checkColumn = function(squares){
@@ -92,7 +96,7 @@ var checkColumn = function(squares){
 	   $(squares[8]).hasClass("o")) {
 		return "o"
 	} 
-	return null
+	return null;
 };
 
 var checkDiagonal = function(squares){
@@ -115,12 +119,34 @@ var checkDiagonal = function(squares){
 	   $(squares[4]).hasClass("o") && 
 	   $(squares[6]).hasClass("o")) {
 		return "o"
-	}
-
-	return null
+	} 
+	return null;
 };
 
+var checkEndGame = function(){
+	var squares = $(".square");
+	if(checkRow(squares) === "x") {
+		return "Player wins!";
+	} 
+	if (checkRow(squares) === "o"){
+		return "Computer wins!";
+	}
+	if(checkColumn(squares) === "x") {
+		return "Player wins!";
+	} 
+	if (checkColumn(squares) === "o"){
+		return "Computer wins!";
+	}
+	if(checkDiagonal(squares) === "x") {
+		return "Player wins!";
+	} 
+	if (checkDiagonal(squares) === "o"){
+		return "Computer wins!";
+	}
+	return null;
+};
 
 $(document).ready(function(){
 	newGame();
+
 });
