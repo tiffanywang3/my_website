@@ -10,12 +10,12 @@ var newGame = function(){
 
 };
 
-var board = [[null,"yellow",null,null,null,null], 
+var board = [[null,null,null,null,null,null], 
 			 [null,null,null,null,null,null], 
 			 [null,null,null,null,null,null], 
 			 [null,null,null,null,null,null], 
 			 [null,null,null,null,null,null], 
-			 [null,null,null,null,null,"red"],
+			 [null,null,null,null,null,null],
 			 [null,null,null,null,null,null]];
 
 var drawSquare = function(x,y,symbol) {
@@ -30,12 +30,15 @@ var drawSquare = function(x,y,symbol) {
 
 var drawBoard = function(){
 	var boardUI = $(".board")
-	$.each(this.board, function(x,column) {
+	$.each(board, function(x,column) {
+		debugger;
 		$.each(column,function(y,square){
+			debugger;
 			drawSquare(x,y,square);
 		});
 	});
 };
+
 
 /*
 var computerChoice = Math.random();
