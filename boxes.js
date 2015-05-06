@@ -1,7 +1,10 @@
 $(document).ready(function(){
-
-
-    $('img').animate({ top: '+=100px'}, 1000 );
-
+    $('.box').click(function(){
+        $('.box').effect('slide');
+    });
+    $('.box1').click(function(){
+        $('.box1').effect('bounce', {times:3}, 500);
+    });
+    $('.box2').draggable();
 });
 
