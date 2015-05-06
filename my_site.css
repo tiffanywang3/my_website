@@ -4,12 +4,11 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat:no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding-left: 210px;
     overflow: hidden;
 }
 
@@ -53,7 +52,8 @@ div.home {
 h1 {
 	font-size: 64px;
 	color: black;
-	padding: 20px;
+	padding-top: 20px;
+	margin-bottom:10px;
 	font-family:Helvetica;
 }
 p {
@@ -61,7 +61,7 @@ p {
 	color:black;
 }
 
-#box1, #box2, #box3 {
+.box {
 	margin: 0 auto;
 	height:50px;
 	width:400px;
@@ -70,18 +70,11 @@ p {
 	text-align:left;
 	font-size:40px;
 	font-family:Helvetica;
-	text-decoration: none;
-	transition: background-color 0.5s ease;
 }
-#box1.active {
+.box.active {
 	font-weight:bold;
 }
-#box2.active {
-	font-weight:bold;
-}
-#box3.active {
-	font-weight:bold;
-}
+
 .active {
 	font-weight:bold;
 }
@@ -89,7 +82,7 @@ img.resize {
     width:240px; /* you can use % */
     height: auto;
 }
-#aboutme {
+.aboutme {
 	background-color: rgba(255,255,255,0.95);
 	padding-left:20px;
 	padding-right:20px;
@@ -98,6 +91,8 @@ img.resize {
 }
 img.aboutme {
 	float:right;
+	padding-top:10px;
 }
+
 
 
