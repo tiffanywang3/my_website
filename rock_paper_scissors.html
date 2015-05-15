@@ -6,10 +6,10 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 	<!-- Custom CSS + JS here -->
-	<link rel="stylesheet" type="text/css" href="building_blocks.css">
-	<script src="building_blocks.js"></script>
+	<link rel="stylesheet" type="text/css" href="rock_paper_scissors.css">
+	<script src="rock_paper_scissors.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-		<head profile="http://tiffanywang.us">
+	<head profile="http://tiffanywang.us">
 	<link rel="icon" 
       type="image/png" 
       href="/images/favicon.png" />
@@ -32,36 +32,36 @@
 			<li><a class="menu" href= "/play.html">PLAY</a></li>
 			<li><a class="menu" href= "/contact.html">CONTACT</a></li>
 		</ul>
-
-<body>
-	<div class="background">
-		<h1>BUILDING BLOCKS</h1>
-		<p>Build something by clicking and dragging some blocks!</p>
-		<div class="toybox">
-			<div class="block" id="box"> </div>
-			<div class="block" id="box1"> </div>
-			<div class="block" id="box2"> </div>
+	<div class="home">
+		<h1>Rock, Paper, Scissors</h1>
+		<p>Play a game against the computer!</p>
+		<br></br>
+		<div class="game">
+			<div class="reset">RESET</div>
 			<br></br>
-			<div class="block" id="rectangle"> </div>
-			<div class="block" id= "rectangle1"> </div>
-			<div class="block" id="rectangle2"> </div>
+			<p class="player">PLAYER 1<p>
+			<p class="computer">COMPUTER<p>
 			<br></br>
-			<div class="block" id= "triangle"> </div>
-			<div class="block" id="triangle1"> </div>
-			<div class="block" id="triangle2"> </div>
+			<div class="player">
+				<div class="rock">ROCK</div>
+				<div class="paper">PAPER</div>
+				<div class="scissors">SCISSORS</div>
+				<br></br>
+					<img id="rock" src="/images/rock.png" style="display:none;"/>
+					<img id="paper" src="/images/paper.png" style="display:none;"/>
+					<img id="scissors" src="/images/scissors.png" style="display:none;"/>
+			</div>
 			<br></br>
-			<div class="block" id= "trapezoid"> </div>
-			<div class="block" id="trapezoid1"> </div>
-			<div class="block" id="trapezoid2"> </div>
+			<div class="computer">
+					<img id="compRock" src="/images/rock.png" style="display:none;float:right;"/>
+					<img id="compPaper" src="/images/paper.png" style="display:none;float:right;"/>
+					<img id="compScissors" src="/images/scissors.png" style="display:none;float:right;"/>
+			
+			</div>
 			<br></br>
-			<div class="block" id= "parallelogram"> </div>
-			<div class="block" id="parallelogram1"> </div>
-			<div class="block" id="parallelogram2"> </div>
-			<br></br>
+			
 		</div>
 	</div>
 </body>
 
 </html>
-
-<!--http://www.webdesignerdepot.com/2013/03/how-to-create-a-color-picker-with-html5-canvas/-->

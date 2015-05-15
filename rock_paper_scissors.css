@@ -61,46 +61,38 @@ p {
 	color:black;
 }
 
-.box {
-	margin: 0 auto;
-	height:50px;
-	width:400px;
-	padding-bottom: 10px;
-	padding-top:10px;
-	text-align:left;
-	font-size:40px;
-	font-family:Helvetica;
+.player {
+	font-size:20px;
+	display:inline;
+	float:left;
 }
-.box.active {
-	font-weight:bold;
-}
-
-.active {
-	font-weight:bold;
-}
-img.resize {
-    width:240px; /* you can use % */
-    height: auto;
-}
-.aboutme {
-	background-color: rgba(255,255,255,0.95);
-	padding-left:20px;
-	padding-right:20px;
-	padding-bottom:10px;
-	text-align:left;
-	text-decoration: none;
-}
-a.aboutme {
-	text-decoration: none;
-}
-img.aboutme {
+.computer {
+	font-size:20px;
+	display:inline;
 	float:right;
-	padding-top:10px;
 }
-.tyw {
-	position:relative;
-	left:10px;
-	height:70px;
-	width:70px;
+.rock {
+	border:solid;
+	height:20px;
+	width:100px;
+	display:inline;
 }
-
+.paper {
+	border:solid;
+	height:20px;
+	width:100px;
+	display:inline;
+}
+.scissors {
+	border:solid;
+	height:20px;
+	width:100px;
+	display:inline;
+}
+.reset {
+	font-size:20px;
+	border:solid;
+	height:20px;
+	width:100px;
+	float:center;
+}
