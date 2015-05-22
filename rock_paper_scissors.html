@@ -6,8 +6,9 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 	<!-- Custom CSS + JS here -->
-	<link rel="stylesheet" type="text/css" href="my_site.css">
-	<script src="my_site.js"></script>
+	<link rel="stylesheet" type="text/css" href="rock_paper_scissors.css">
+	<script src="rock_paper_scissors.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<head profile="http://tiffanywang.us">
 	<link rel="icon" 
       type="image/png" 
@@ -20,10 +21,10 @@
 
 	  ga('create', 'UA-47276976-2', 'auto');
 	  ga('send', 'pageview');
-	</script>
+	</script>      
 </head>
 
-<body background="/images/palm_fronds_2.png">
+<body>
 		<ul>
 			<li><a class="menu" href="/index.html">HOME</a></li>
 			<li><a class="menu" href= "/about.html">ABOUT</a></li>
@@ -32,20 +33,34 @@
 			<li><a class="menu" href= "/contact.html">CONTACT</a></li>
 		</ul>
 	<div class="home">
-		 <h1> TIFFANY</h1> <img class= "tyw" src="/images/tyw.png"></img>
-		<p>I'm going to make 10 websites in 10 days!!</p>
-		<ul>
-			<li><a href="/boxes.html">Day One: Clickable Boxes </a></li>
+		<h1>Rock, Paper, Scissors</h1>
+		<p>Play a game against the computer!</p>
+		<br></br>
+		<div class="game">
+			<div class="reset">RESET</div>
 			<br></br>
-			<li><a href="/building_blocks.html">Day Two: Building Blocks </a></li>
+			<p class="player">PLAYER 1<p>
+			<p class="computer">COMPUTER<p>
 			<br></br>
-			<li><a href="/rock_paper_scissors.html">Day Three: Rock, Paper, Scissors!</a></li>
+			<div class="player">
+				<div class="rock">ROCK</div>
+				<div class="paper">PAPER</div>
+				<div class="scissors">SCISSORS</div>
+				<br></br>
+					<img id="rock" src="/images/rock.png" style="display:none;"/>
+					<img id="paper" src="/images/paper.png" style="display:none;"/>
+					<img id="scissors" src="/images/scissors.png" style="display:none;"/>
+			</div>
 			<br></br>
-			<li><a href="/to_do.html">Day Four: To-Do List</a></li>
+			<div class="computer">
+					<img id="compRock" src="/images/rock.png" style="display:none;float:right;"/>
+					<img id="compPaper" src="/images/paper.png" style="display:none;float:right;"/>
+					<img id="compScissors" src="/images/scissors.png" style="display:none;float:right;"/>
+			
+			</div>
 			<br></br>
-			<li><a href="/fathers_day.html">Day Five: Father's Day Card Generator!</a></li>
-		</ul>
-
+			
+		</div>
 	</div>
 </body>
 
