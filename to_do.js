@@ -9,22 +9,27 @@ $(document).ready(function(){
 	
 });
 
+function checkDone() {
+	$("#myCheck").on('click',"input[type=checkbox]",function () {
+	  if(this.checked){
+	    alert("Congrats it's done!")
+	  };
+	});
+};
+
 function addItem() {
-	var newItem = $("#description").val();	
+	var newItem = $("#description").val();
 	if (newItem.length !== 0) {
 		$("#todoList").append("<li> <input type='checkbox' id='myCheck' class='todo'>" + newItem + "</li>");
 		document.getElementById("description").value = "";
 	};
-	$("#description").focus();
 	checkDone();
+	$("#description").focus();
+
 };
 
-function checkDone() {
-    var x = document.getElementById("myCheck").checked;
-    if (x == true) {
-    	alert("Congrats it's done!");
-    };
-};
+
+
 
 /*
 THIS IS THE JUNK THAT DOESN'T WORK BUT REPRESENTS SOME OF THE WORK I PUT INTO THIS TODO LIST:D

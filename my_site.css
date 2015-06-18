@@ -1,10 +1,7 @@
 body {
 	text-align: center;
 	padding: 100px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
+
 }
 ul {
     list-style-type: none;
@@ -27,7 +24,8 @@ a.menu:link, a.menu:visited {
     padding: 4px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family:Helvetica;
+    font-family:"Brown" ,sans-serif;
+    font-size: 20px;
 }
 
 a.menu:hover, a.menu:active {
@@ -37,28 +35,48 @@ div.content {
 	margin: 0 auto;
 	min-height:500px;
 	width: 700px;
-	background-color: rgba(255,255,255,0.95);
     text-align: center;
-    font-family:Helvetica;
+    font-family:"Brown",sans-serif;
+    text-decoration: none;
+    background-image: url("/images/palm_fronds_2.png"); 
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;   
 }
 div.home {
 	margin: 0 auto;
 	height: 500px;
 	width: 700px;
-	background-color: rgba(255,255,255,0.95);
+	position:center;
     text-align: center;
-    font-family:Helvetica;
+    font-family:"Brown",sans-serif;
+    font-size: 30px;
+    background-image: url("/images/palm_fronds_2.png");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+a.links:hover, a.links:active {
+    background-color: #E2E2E2;
+}
+
+.links a {
+	text-decoration: none;
+	color:black;
+	background-color: rgba(255,255,255,255);
 }
 h1 {
 	font-size: 64px;
 	color: black;
 	padding-top: 20px;
 	margin-bottom:10px;
-	font-family:Helvetica;
+	font-family:"Brown",sans-serif;
 }
 p {
-	font-family:Helvetica;
+	font-family:"Brown",sans-serif;
 	color:black;
+	background-color: white;
+	font-size:20px;
 }
 
 .box {
@@ -69,7 +87,7 @@ p {
 	padding-top:10px;
 	text-align:left;
 	font-size:40px;
-	font-family:Helvetica;
+	font-family:"Brown",sans-serif;
 }
 .box.active {
 	font-weight:bold;
@@ -83,10 +101,10 @@ img.resize {
     height: auto;
 }
 .aboutme {
-	background-color: rgba(255,255,255,0.95);
+	background-color: rgba(255,255,255,255);
 	padding-left:20px;
 	padding-right:20px;
-	padding-bottom:10px;
+	padding-bottom:20px;
 	text-align:left;
 	text-decoration: none;
 }
@@ -98,9 +116,7 @@ img.aboutme {
 	padding-top:10px;
 }
 .tyw {
-	position:relative;
-	left:10px;
-	height:70px;
-	width:70px;
+	height:100px;
+	width:800px;
 }
 
