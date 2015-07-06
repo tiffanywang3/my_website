@@ -1,0 +1,47 @@
+function ArithGeo(arr) { 
+  if(testSequence(arr, minus)) {
+    return "Arithmetic";
+  }
+  if(testSequence(arr, divide)) {
+    return "Geometric";
+  }
+  return -1;
+}
+
+function testSequence(arr, operation) {
+  var processedArr = [];
+  for (var i = 1; i < arr.length; i++){
+    processedArr.push(operation(arr[i], arr[i-1]));
+  };
+  if(arraySame(processedArr)){
+    return true;
+  }
+  return false;
+}
+
+function arraySame(arr){
+ var first = arr[0];
+      for(var i = 0; i < arr.length; i++){
+      if( first !== arr[i]){
+          return false;
+      };
+    };
+    return true;
+}
+
+function minus(op1, op2) {
+  return op1 - op2;
+}
+
+function divide(op1, op2) {
+  return op1 / op2;
+}
+
+
+function mySequenceOp(op1, op2){
+  
+}
+
+
+- First add 5 to the number
+- Then Multiply by 7
