@@ -45,7 +45,7 @@ div.content {
 }
 div.home {
 	margin: 0 auto;
-	height: 500px;
+	min-height: 500px;
 	width: 700px;
 	position:center;
     text-align: center;
