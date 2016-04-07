@@ -1,6 +1,6 @@
 From Terminal:
 
-Change directory nto this folder 
+Change directory into this folder 
 	cd /Users/tyw/Desktop/my_website
 Run Webserver
 	python -m SimpleHTTPServer 8000
